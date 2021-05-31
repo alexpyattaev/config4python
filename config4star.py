@@ -41,10 +41,7 @@ def readconf(fname):
 
 
 def test_readconf():
-    fname = 'LSRC.conf.testing'
+    fname = 'test.conf'
     scopes = readconf(fname)
-    print(scopes['debug']['debug_file'])
-    print(scopes['global']['node_id'])
-    print(scopes['global']['my_mac'])
     print(scopes['global']['db_connect_string'])
     writeconf(fname + "_new", scopes)
